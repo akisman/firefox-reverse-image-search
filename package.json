@@ -1,0 +1,75 @@
+{
+  "title": "Image Search",
+  "name": "rev-image-search",
+  "id": "@rev-image-search",
+  "version": "1.0.0",
+  "description": "Reverse image search using the most popular search engines.",
+  "icon": "resource://@rev-image-search/data/icon.png",
+  "main": "src/main.js",
+  "author": "Akis Manolis <akis.dev@gmail.com>",
+  "homepage": "https://github.com/akisman/firefox-reverse-image-search",
+  "permissions": {
+      "private-browsing": true
+  },
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "firefox",
+    "addon",
+    "reverse",
+    "image",
+    "search",
+    "lookup"
+  ],
+  "preferences": [{
+      "name": "openInBackground",
+      "title": "Background tab",
+      "description": "Open image search results in a background tab",
+      "type": "bool",
+      "value": true
+  },
+  {
+      "name": "showGoogle",
+      "title": "Show Google",
+      "description": "Enable Google in the menu",
+      "type": "bool",
+      "value": true
+  },
+  {
+      "name": "showTineye",
+      "title": "Show Tineye",
+      "description": "Enable Tineye in the menu",
+      "type": "bool",
+      "value": true
+  },
+  {
+      "name": "showBing",
+      "title": "Show Bing",
+      "description": "Enable Bing in the menu",
+      "type": "bool",
+      "value": true
+  },
+  {
+      "name": "showKarma",
+      "title": "Show Karma Decay",
+      "description": "Enable Karma Decay in the menu",
+      "type": "bool",
+      "value": true
+  },
+  {
+      "name": "showYandex",
+      "title": "Show Yandex",
+      "description": "Enable Yandex in the menu",
+      "type": "bool",
+      "value": true
+  },
+  {
+      "name": "showBaidu",
+      "title": "Show Baidu",
+      "description": "Enable Baidu in the menu",
+      "type": "bool",
+      "value": true
+  }]
+}
