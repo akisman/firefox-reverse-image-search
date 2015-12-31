@@ -1,5 +1,5 @@
 /*
- * Firefox Rev Image Search Addon
+ * Image Search, Firefox Addon
  *
  * Copyright (c) 2015 Akis Manolis https://github.com/akisman
  * and licenced under the MIT licence. All rights not explicitly
