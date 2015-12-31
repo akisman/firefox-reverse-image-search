@@ -25,5 +25,5 @@ LICENSE
 # Ignore .git folder:
 .git/
 
-# Ignore images:
+# Ignore images folder
 images/
