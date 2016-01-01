@@ -29,7 +29,7 @@ Under the addon options, you can select the focus of the results tab(background 
 
 ## AMO
 
-Install directly from [AMO](https://addons.mozilla.org/en-US/firefox/addon/rev-image-search/) (Not yet signed)
+Install directly from [AMO](https://addons.mozilla.org/en-US/firefox/addon/rev-image-search/)
 
 <!--## Github-->
 
