@@ -2,7 +2,7 @@
   "title": "Image Search",
   "name": "rev-image-search",
   "id": "@rev-image-search",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Reverse image search using the most popular search engines.",
   "icon": "resource://@rev-image-search/data/icon.png",
   "main": "src/main.js",
@@ -27,6 +27,13 @@
       "name": "openInBackground",
       "title": "Background tab",
       "description": "Open image search results in a background tab",
+      "type": "bool",
+      "value": true
+  },
+  {
+      "name": "showAll",
+      "title": "Show 'All Engines'",
+      "description": "Enable the 'All Engines' option in the menu",
       "type": "bool",
       "value": true
   },

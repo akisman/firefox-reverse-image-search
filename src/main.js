@@ -53,10 +53,17 @@ var engines = [
     }
 ];
 
-
-// Populate the the menu array depending on options
+// Populate and return the the menu array depending on the selected options
 function createMenuItems() {
     var menuArray = [];
+    // Create the menu entry for searching with all engines
+    if (preferences['showAll']) {
+        menuArray.push(contextMenu.Item({
+            label: 'All Engines',
+            data: '-all'
+        }));
+        menuArray.push(contextMenu.Separator());
+    }
     engines.forEach(function (engine) {
         if (preferences[engine.prefName]) {
             menuArray.push(contextMenu.Item({
@@ -67,6 +74,25 @@ function createMenuItems() {
         }
     });
     return menuArray;
+}
+
+// Open tab(or tabs) with image search results
+function searchImage(data) {
+    if (data.url === '-all') {
+        engines.forEach(function (engine) {
+            if (preferences[engine.prefName]) {
+                tabs.open({
+                    url: engine.url.replace('{imageUrl}', encodeURIComponent(data.img)),
+                    inBackground: preferences.openInBackground
+                });
+            }
+        });
+    } else {
+        tabs.open({
+            url: data.url.replace('{imageUrl}', encodeURIComponent(data.img)),
+            inBackground: preferences.openInBackground
+        });
+    }
 }
 
 // Register an event listener listening for any preference change
@@ -80,10 +106,7 @@ var menu = contextMenu.Menu({
     contentScript: 'self.on("click", function (node, data) { self.postMessage( { url: data, img: node.src } ) });',
     items: createMenuItems(),
     onMessage: function (data) {
-        tabs.open({
-            url: data.url.replace('{imageUrl}', encodeURIComponent(data.img)),
-            inBackground: preferences.openInBackground
-        });
+        searchImage(data);
     }
 });
 
