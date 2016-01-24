@@ -6,14 +6,15 @@
 
 ![Screenshot](images/screenshot-1.png)
 
-With the addon enabled, when right clicking on an image you have the ```Search image with...``` option, in which you can choose among the enabled search engines.
+With the addon enabled, right click on an image and select the search engine you want to use under the ```Search image with...``` menu option.
 
 # Options
 
 ![Screenshot](images/screenshot-3.png)
 
-Under the addon options, you can select the focus of the results tab(background or foreground), and enable or disable the following search engines:
+Select the focus of the result tab or tabs, and enable or disable any of the following menu options:
 
+* All Engines (Searches with all the selected search engines)
 * Google
 * TinEye
 * Bing
