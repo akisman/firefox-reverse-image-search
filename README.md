@@ -34,7 +34,7 @@ Install directly from [AMO](https://addons.mozilla.org/en-US/firefox/addon/rev-i
 
 ## Github
 
-Download & install directly from GitHub [![GitHub version](https://badge.fury.io/gh/akisman%2Ffirefox-reverse-image-search.svg)](https://github.com/akisman/firefox-reverse-image-search/releases/tag/1.0.0)
+Download & install directly from GitHub [![GitHub version](https://badge.fury.io/gh/akisman%2Ffirefox-reverse-image-search.svg)](https://github.com/akisman/firefox-reverse-image-search/releases/tag/1.1.0)
 
 ## Manually
 
