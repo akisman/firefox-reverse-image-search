@@ -43,7 +43,7 @@ var engines = [
         name: 'Yandex',
         prefName: 'showYandex',
         icon: self.data.url('yandex-icon.png'),
-        url: 'https://yandex.com/images/search?img_url={imageUrl}&rpt=imageview'
+        url: 'https://yandex.com/images/search?url={imageUrl}&rpt=imageview'
     },
     {
         name: 'Baidu',
